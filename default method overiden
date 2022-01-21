@@ -1,0 +1,27 @@
+import java.util.*;
+import java.io.*;
+interface left{
+    default void m1()
+    {
+        System.out.println("hello i am left child");
+    }
+}
+interface roght{
+    default void m1()
+    {
+        System.out.println("hello i am right child");
+    }
+}
+class Test implements left,roght{
+    public void m1()
+    {
+        System.out.println("Hello who am i?");
+        
+    }
+    	public static void main(String[] args) {
+    	    Test t=new Test();
+    	    t.m1();
+		
+	}
+
+}
